@@ -1,0 +1,49 @@
+.NavBarMainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+  background-color: initial;
+  position: fixed;
+  top: 0;
+  background: transparent;
+  width: 100%;
+}
+
+.NavBarMainContainer ul {
+  display: flex;
+  gap: 2em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.NavBarMainContainer li {
+  all: unset;
+  font-weight: 500;
+}
+
+.NavBarMainContainer li:hover,span:hover {
+  color: #ff4d30;
+  cursor: pointer;
+}
+
+.NavBarMainContainer span {
+  font-weight: 500;
+}
+
+.RegisterButton {
+  all: unset;
+  padding: 0.8em 1.3em;
+  margin-left: 1em;
+  border-radius: 5px;
+  background-color: #ff4d30;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 10px 15px 0 rgba(255,83,48,.35);
+}
+
+.RegisterButton:hover{
+    cursor: pointer;
+    background-color: #f34826;
+
+}
