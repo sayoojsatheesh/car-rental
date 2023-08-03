@@ -1,0 +1,39 @@
+.HomePageContainer {
+  padding: 0 2rem;
+  height: 100%;
+}
+
+.HomePageContainer h1,
+h2 {
+  text-align: center;
+  font-weight: 700;
+  font-family: Poppins, sans-serif;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.HomePageContainer h1 {
+  font-size: 4rem;
+}
+
+.HomePageContainer span {
+  color: #ff4d30;
+}
+
+.HomePageContainer p {
+  color: #706f7b;
+  font-family: Rubik, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.CarImage {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+}

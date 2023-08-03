@@ -1,5 +1,5 @@
 // MUI //
-import { Box, Drawer } from "@mui/material";
+import {  Drawer } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 // CSS //
 import classes from "./SideBar.module.css";
