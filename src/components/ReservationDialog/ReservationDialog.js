@@ -1,3 +1,5 @@
+// React //
+import { useState } from "react";
 // MUI //
 import PropTypes from "prop-types";
 import {
@@ -7,13 +9,17 @@ import {
   DialogContent,
   DialogActions,
   Divider,
-  Box,
+  TextField,
   Grid,
+  Box,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import LocationDateCard from "../LocationDateCard/LocationDateCard";
+// React Toastify //
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 let imageMap = {
   ["Audi A1s-Line"]: "/images/Audi.PNG",
@@ -74,12 +80,29 @@ BootstrapDialogTitle.propTypes = {
 };
 
 const ReservationDialog = (props) => {
+  const [firstName, setfirstName] = useState("");
+  const [lastName, setlastName] = useState("");
+  const [emailAddress, setemailAddress] = useState("");
+
   const handleClose = () => {
+    props.setOpen(false);
+  };
+
+  const handleReserveNowButtonClicked = () => {
+    if (!firstName || !lastName || !emailAddress) {
+      toast.error("All fields required!");
+      return;
+    }
+    toast.success("Reservation Done!");
+    setfirstName("");
+    setlastName("");
+    setemailAddress("");
     props.setOpen(false);
   };
 
   return (
     <div>
+      <ToastContainer position="top-center" reverseOrder={false} />
       <BootstrapDialog
         maxWidth="xl"
         onClose={handleClose}
@@ -128,11 +151,64 @@ const ReservationDialog = (props) => {
             </Grid>
           </Grid>
           <Divider sx={{ backgroundColor: "#333" }} variant="fullWidth" />
-          <h3 style={{ color: "#ff4d30" }}>Personal Information</h3>
+          <h3
+            style={{
+              color: "#ff4d30",
+              marginTop: ".5rem",
+              marginBottom: ".5rem",
+            }}
+          >
+            Personal Information
+          </h3>
           <Grid container spacing={2}>
-            <Grid item xs={12} md={6}>1</Grid>
-            <Grid item xs={12} md={6}>2</Grid>
-            <Grid item xs={12}>3</Grid>
+            <Grid item xs={12} md={6}>
+              <Box>
+                <h4 style={{ color: "grey" }}>
+                  First Name <span style={{ color: "#ff4d30" }}>*</span>
+                </h4>
+                <TextField
+                  id="outlined-basic"
+                  label="First Name"
+                  variant="outlined"
+                  sx={{ width: "100%", marginTop: ".3rem" }}
+                  onChange={(event) => {
+                    setfirstName(event.target.value);
+                  }}
+                />
+              </Box>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Box>
+                <h4 style={{ color: "grey" }}>
+                  Last Name <span style={{ color: "#ff4d30" }}>*</span>
+                </h4>
+                <TextField
+                  id="outlined-basic"
+                  label="Last Name"
+                  variant="outlined"
+                  sx={{ width: "100%", marginTop: ".3rem" }}
+                  onChange={(event) => {
+                    setlastName(event.target.value);
+                  }}
+                />
+              </Box>
+            </Grid>
+            <Grid item xs={12}>
+              <Box>
+                <h4 style={{ color: "grey" }}>
+                  Email Address<span style={{ color: "#ff4d30" }}>*</span>
+                </h4>
+                <TextField
+                  id="outlined-basic"
+                  label="Email Address"
+                  variant="outlined"
+                  sx={{ width: "100%", marginTop: ".3rem" }}
+                  onChange={(event) => {
+                    setemailAddress(event.target.value);
+                  }}
+                />
+              </Box>
+            </Grid>
           </Grid>
         </DialogContent>
         <DialogActions>
@@ -147,7 +223,7 @@ const ReservationDialog = (props) => {
               },
             }}
             autoFocus
-            onClick={handleClose}
+            onClick={handleReserveNowButtonClicked}
           >
             Reserve Now
           </Button>

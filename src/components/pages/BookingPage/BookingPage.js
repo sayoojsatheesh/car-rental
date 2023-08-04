@@ -71,16 +71,16 @@ const BookingPage = () => {
   }
 
   function handleSearchButtonClicked() {
-    // if (
-    //   !carType ||
-    //   !pickupLocation ||
-    //   !dropofLocation ||
-    //   !pickupDate ||
-    //   !dropofDate
-    // ) {
-    //   toast.error("All fields required!");
-    //   return;
-    // }
+    if (
+      !carType ||
+      !pickupLocation ||
+      !dropofLocation ||
+      !pickupDate ||
+      !dropofDate
+    ) {
+      toast.error("All fields required!");
+      return;
+    }
     setOpen(true);
   }
 
