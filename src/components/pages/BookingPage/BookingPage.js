@@ -29,7 +29,7 @@ const BookingPage = () => {
   const [dropofLocationOpen, setdropofLocationOpen] = useState(false);
   const [pickupDate, setpickupDate] = useState("");
   const [dropofDate, setdropofDate] = useState("");
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   // Car Type //
   function handleCarTypeClose() {

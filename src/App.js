@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar/NavBar";
 import SideBar from "./components/SideBar/SideBar";
 import HomePage from "./components/pages/HomePage/HomePage";
 import BookingPage from "./components/pages/BookingPage/BookingPage";
+import PlanSection from "./components/pages/PlanSection/PlanSection";
 
 function App() {
   const [showSideBar, setshowSideBar] = useState(false);
@@ -16,6 +17,7 @@ function App() {
       <NavBar showSideBar={showSideBar} setshowSideBar={setshowSideBar} />
       <HomePage />
       <BookingPage />
+      <PlanSection />
     </div>
   );
 }
