@@ -12,10 +12,13 @@ const NavBar = (props) => {
   function handleMenuCliked() {
     props.setshowSideBar(!props.showSideBar);
   }
-  
+
   return (
     <div className={classes.NavBarMainContainer}>
-      <img src={CarRental} />
+      <Box>
+        <img style={{ width: "100%", height: "52px" }} src={CarRental} />
+      </Box>
+
       {!dontShowMenuIcon ? (
         <ul>
           <li>Home</li>

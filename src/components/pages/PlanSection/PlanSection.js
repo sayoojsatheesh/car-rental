@@ -33,7 +33,7 @@ const PlanSection = () => {
       </h2>
       <Grid container justifyContent={"center"}>
         {InfoArray.map((item) => (
-          <Grid item lg={4}>
+          <Grid key={Math.random()} item lg={4}>
             <PlanSectionCard
               ImagePath={item.imagePath}
               Headingtext={item.HeadingText}
