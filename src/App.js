@@ -8,6 +8,7 @@ import HomePage from "./components/pages/HomePage/HomePage";
 import BookingPage from "./components/pages/BookingPage/BookingPage";
 import PlanSection from "./components/pages/PlanSection/PlanSection";
 import CarModels from "./components/pages/CarModels/CarModels";
+import Banner from "./components/pages/Banner/Banner";
 
 function App() {
   const [showSideBar, setshowSideBar] = useState(false);
@@ -20,6 +21,7 @@ function App() {
       <BookingPage />
       <PlanSection />
       <CarModels />
+      <Banner />
     </div>
   );
 }

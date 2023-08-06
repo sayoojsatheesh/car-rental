@@ -6,6 +6,8 @@ import { Grid, Box, Button } from "@mui/material";
 import CarData from "../../../Data/CarData";
 // Custom //
 import InfoContainer from "../../InfoContainer/InfoContainer";
+// Libaries //
+import { Link } from "react-scroll";
 
 const CarModels = () => {
   const [currentModel, setcurrentModel] = useState({
@@ -108,6 +110,7 @@ const CarModels = () => {
             />
             <InfoContainer Heading={"Fuel"} Value={currentModel.fuel} />
             <Box>
+            <Link to="BookingPage" spy={true} smooth={true} offset={-1} duration={500}>
               <Button
                 sx={{
                   width: "100%",
@@ -123,6 +126,7 @@ const CarModels = () => {
               >
                 Reserv Now
               </Button>
+              </Link>
             </Box>
           </Box>
         </Grid>

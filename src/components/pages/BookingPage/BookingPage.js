@@ -85,7 +85,7 @@ const BookingPage = () => {
   }
 
   return (
-    <>
+    <Box id='BookingPage'>
       <ToastContainer position="top-center" reverseOrder={false} />
       <ReservationDialog
         dropofDate={dropofDate}
@@ -312,7 +312,7 @@ const BookingPage = () => {
           </Grid>
         </Grid>
       </Box>
-    </>
+    </Box>
   );
 };
 
