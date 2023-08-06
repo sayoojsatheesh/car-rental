@@ -1,5 +1,4 @@
 const PlanSectionCard = (props) => {
-
   return (
     <>
       <div style={{ maxWidth: "250px", margin: "0 auto" }}>
@@ -9,7 +8,18 @@ const PlanSectionCard = (props) => {
         ></img>
       </div>
       <h3 style={{ textAlign: "center" }}>{props.Headingtext}</h3>
-      <p style={{ textAlign: "center", width: "90%",maxWidth: "250px",margin:'0 auto' }}>{props.Paragraph}</p>
+      <p
+        style={{
+          textAlign: "center",
+          width: "90%",
+          maxWidth: "250px",
+          margin: "0 auto",
+          color: "grey",
+          padding: ".6rem 0",
+        }}
+      >
+        {props.Paragraph}
+      </p>
     </>
   );
 };

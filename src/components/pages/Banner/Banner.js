@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <Box sx={{ background: "#2d2d2d",margin:'1.5rem 0' }}>
       <Box sx={{ padding: "1rem 2.5rem" }}>
-        <h1 style={{ color: "white", textAlign: "center", fontSize: "4rem" }}>
+        <h1 style={{ color: "white", textAlign: "center", fontSize: "3.5rem" }}>
           Save big with our cheap car rental!
         </h1>
         <h4
