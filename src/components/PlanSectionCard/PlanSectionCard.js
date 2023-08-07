@@ -1,26 +1,41 @@
 const PlanSectionCard = (props) => {
   return (
-    <>
-      <div style={{ maxWidth: "250px", margin: "0 auto" }}>
-        <img
-          src={props.ImagePath}
-          style={{ width: "100%", height: "100%" }}
-        ></img>
-      </div>
-      <h3 style={{ textAlign: "center" }}>{props.Headingtext}</h3>
-      <p
+    <div
+      style={{
+        display: props.flex ? "flex" : "",
+        justifyContent: "center",
+      }}
+    >
+      <div
         style={{
-          textAlign: "center",
-          width: "90%",
           maxWidth: "250px",
           margin: "0 auto",
-          color: "grey",
-          padding: ".6rem 0",
+          display: "flex",
+         justifyContent:'center',
+         alignItems:'center',
+        
         }}
       >
-        {props.Paragraph}
-      </p>
-    </>
+        <img src={props.ImagePath} style={{ height: "100px" }}></img>
+      </div>
+      <div
+      style={{ width:props.flex?'50%':'auto'}}
+      >
+        <h3 style={{ textAlign: "center" }}>{props.Headingtext}</h3>
+        <p
+          style={{
+            textAlign: "center",
+            width: "90%",
+            maxWidth: "250px",
+            margin: "0 auto",
+            color: "grey",
+            padding: ".6rem 0",
+          }}
+        >
+          {props.Paragraph}
+        </p>
+      </div>
+    </div>
   );
 };
 

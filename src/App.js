@@ -10,6 +10,7 @@ import PlanSection from "./components/pages/PlanSection/PlanSection";
 import CarModels from "./components/pages/CarModels/CarModels";
 import Banner from "./components/pages/Banner/Banner";
 import Choose from "./components/pages/Choose/Choose";
+import Testimonials from "./components/pages/Testimonials/Testimonials";
 
 function App() {
   const [showSideBar, setshowSideBar] = useState(false);
@@ -24,6 +25,7 @@ function App() {
       <CarModels />
       <Banner />
       <Choose />
+      <Testimonials />
     </div>
   );
 }
