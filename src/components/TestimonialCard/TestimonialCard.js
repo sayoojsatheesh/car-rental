@@ -10,6 +10,9 @@ const TestimonialCard = (props) => {
         background: "#f0f0f0",
         height:'100%',
         boxShadow: '4px 7px 5px 0px rgba(0,0,0,0.75)',
+        display:'flex',
+        flexDirection:'column',
+        justifyContent:'space-between'
       }}
     >
       <p>"{props.Testimonial}"</p>

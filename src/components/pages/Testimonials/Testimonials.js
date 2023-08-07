@@ -37,9 +37,13 @@ const Testimonials = () => {
         </p>
       </Box>
       <Box>
-        <Grid container spacing={3}>
+        <Grid
+          container
+          spacing={3}
+          sx={{ marginTop: "1.5rem", marginBottom: "1.5rem" }}
+        >
           {testimonials.map((item) => (
-            <Grid item xs={12} md={6} >
+            <Grid item xs={12} md={6} key={Math.random()}>
               <TestimonialCard
                 Testimonial={item.TestimonialsText}
                 Name={item.Name}
