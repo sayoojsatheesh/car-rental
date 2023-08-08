@@ -4,6 +4,12 @@
   align-items: center;
   padding: 2rem 2rem;
   background-color: initial;
+  background: transparent;
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
 }
 
 .NavBarMainContainer ul {

@@ -5,6 +5,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { useMediaQuery, Box } from "@mui/material";
 // Image //
 import CarRental from "../../Assets/Image/CarRental.PNG";
+// React Router //
+import { Link } from "react-router-dom";
 
 const NavBar = (props) => {
   const dontShowMenuIcon = useMediaQuery("(max-width:1100px)");
@@ -21,9 +23,12 @@ const NavBar = (props) => {
 
       {!dontShowMenuIcon ? (
         <ul>
-          <li>Home</li>
-          <li>About</li>
+           <Link style={{ textDecoration: 'none', color: 'black' }} to="/">
+           <li>Home</li>
+          </Link>   
+          <Link style={{ textDecoration: 'none', color: 'black' }} to="/models">
           <li>Vehicle Modals</li>
+          </Link>
           <li>Testimonials</li>
           <li>Our Team</li>
           <li>Contact</li>

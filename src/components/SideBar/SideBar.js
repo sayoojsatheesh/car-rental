@@ -1,8 +1,10 @@
 // MUI //
-import {  Drawer } from "@mui/material";
+import { Drawer } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 // CSS //
 import classes from "./SideBar.module.css";
+// React -Router //
+import { Link } from "react-router-dom";
 
 const SideBar = (props) => {
   return (
@@ -20,10 +22,31 @@ const SideBar = (props) => {
             }}
           />
         </div>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Models</li>
+        <ul
+          onClick={() => {
+            props.setshowSideBar(false);
+          }}
+        >
+          <Link
+            style={{
+              textDecoration: "none",
+              color: "black",
+              textAlign: "center",
+            }}
+            to="/"
+          >
+            <li>Home</li>
+          </Link>
+          <Link
+            style={{
+              textDecoration: "none",
+              color: "black",
+              textAlign: "center",
+            }}
+            to="/models"
+          >
+            <li>Vehicle Modals</li>
+          </Link>
           <li>Testimonials</li>
           <li>Our Team</li>
           <li>Contact</li>
