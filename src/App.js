@@ -12,6 +12,7 @@ import Banner from "./components/pages/Banner/Banner";
 import Choose from "./components/pages/Choose/Choose";
 import Testimonials from "./components/pages/Testimonials/Testimonials";
 import FAQ from "./components/pages/FAQ/FAQ";
+import Contact from "./components/pages/Contact/Contact";
 
 function App() {
   const [showSideBar, setshowSideBar] = useState(false);
@@ -28,6 +29,7 @@ function App() {
       <Choose />
       <Testimonials />
       <FAQ />
+      <Contact />
     </div>
   );
 }
