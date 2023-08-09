@@ -26,8 +26,10 @@ const VehicleCard = (props) => {
       <Box
         sx={{
           width: "95%",
-          border: "1px solid grey",
-          boxShadow: "1px 2px 5px 5px rgba(0,0,0,0.75)",
+          borderRadius:'5px',
+          border:'.5px solid grey',
+          minHeight:'470px'
+           
         }}
       >
         <Box>
