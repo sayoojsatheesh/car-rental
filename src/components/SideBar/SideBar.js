@@ -67,7 +67,16 @@ const SideBar = (props) => {
           >
             <li>Our Team</li>
           </Link>
-          <li>Contact</li>
+          <Link
+            style={{
+              textDecoration: "none",
+              color: "black",
+              textAlign: "center",
+            }}
+            to="/Contact"
+          >
+            <li>Contact</li>
+          </Link>
         </ul>
       </div>
     </Drawer>

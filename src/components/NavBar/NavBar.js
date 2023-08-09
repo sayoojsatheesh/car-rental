@@ -35,7 +35,9 @@ const NavBar = (props) => {
           <Link style={{ textDecoration: 'none', color: 'black' }} to="/Team">
           <li>Our Team</li>
           </Link>
+          <Link style={{ textDecoration: 'none', color: 'black' }} to="/Contact">
           <li>Contact</li>
+          </Link>
         </ul>
       ) : null}
       {!dontShowMenuIcon ? (

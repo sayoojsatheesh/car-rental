@@ -10,6 +10,7 @@ import VehicleModals from "./components/pages/VehicleModals/VehicleModals";
 import IntroPage from "./components/pages/IntroPage/IntroPage";
 import TestimonialsPage from "./components/pages/TestimonialsPage/TestimonialsPage";
 import TeamPage from "./components/pages/TeamPage/TeamPage";
+import ContactPage from "./components/pages/ContactPage/ContactPage";
 
 function App() {
   const [showSideBar, setshowSideBar] = useState(false);
@@ -23,6 +24,7 @@ function App() {
         <Route path="/models" element={<VehicleModals />} />
         <Route path="/Testimonials" element={<TestimonialsPage />} />
         <Route path="/Team" element={<TeamPage />} />
+        <Route path="/Contact" element={<ContactPage />} />
       </Routes>
       
     </div>
