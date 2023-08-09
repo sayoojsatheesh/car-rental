@@ -1,0 +1,15 @@
+.imageTag {
+  height: 100%;
+  width: 100%;
+}
+
+.DetailsContainer {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.SubContainer{
+    display: flex;
+
+}
