@@ -1,23 +1,28 @@
 // MUI //
-import { Box } from "@mui/material";
+import { Box, useMediaQuery, useTheme } from "@mui/material";
 
 const TestimonialCard = (props) => {
+  const theme = useTheme();
+  const mdUP = useMediaQuery(theme.breakpoints.up("sm"));
   return (
     <Box
       sx={{
         padding: "1rem 1.5rem",
         borderRadius: "5px",
         background: "#f0f0f0",
-        height:'100%',
-        boxShadow: '4px 7px 5px 0px rgba(0,0,0,0.75)',
-        display:'flex',
-        flexDirection:'column',
-        justifyContent:'space-between'
+        height: "100%",
+        boxShadow: "4px 7px 5px 0px rgba(0,0,0,0.75)",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        minHeight: "200px",
+        width:`${mdUP?'50%':'auto'}`,
+        margin:'0 auto'
       }}
     >
       <p>"{props.Testimonial}"</p>
-      <Box sx={{display:'flex',marginTop:'1.5rem'}}>
-        <Box >
+      <Box sx={{ display: "flex", marginTop: "1.5rem" }}>
+        <Box>
           <img
             style={{
               width: "70px",
@@ -28,9 +33,9 @@ const TestimonialCard = (props) => {
             src={props.ImagePath}
           ></img>
         </Box>
-        <Box sx={{alignSelf:'center',padding:'0 1.5rem'}}>
+        <Box sx={{ alignSelf: "center", padding: "0 1.5rem" }}>
           <h2>{props.Name}</h2>
-          <h5 style={{color:'grey'}}>{props.Address}</h5>
+          <h5 style={{ color: "grey" }}>{props.Address}</h5>
         </Box>
       </Box>
     </Box>

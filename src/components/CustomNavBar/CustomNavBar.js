@@ -7,6 +7,7 @@ const CustomNavBar = () => {
   const currentPath = useLocation().pathname;
   let map = {
     "/models": "Vehicle Modals",
+    "/Testimonials": "Testimonials",
   };
   let pathName = map[currentPath];
   return (

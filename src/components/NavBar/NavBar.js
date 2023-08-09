@@ -29,7 +29,9 @@ const NavBar = (props) => {
           <Link style={{ textDecoration: 'none', color: 'black' }} to="/models">
           <li>Vehicle Modals</li>
           </Link>
+          <Link style={{ textDecoration: 'none', color: 'black' }} to="/Testimonials">
           <li>Testimonials</li>
+          </Link>
           <li>Our Team</li>
           <li>Contact</li>
         </ul>

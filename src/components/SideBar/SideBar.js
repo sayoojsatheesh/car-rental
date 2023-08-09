@@ -47,7 +47,16 @@ const SideBar = (props) => {
           >
             <li>Vehicle Modals</li>
           </Link>
-          <li>Testimonials</li>
+          <Link
+            style={{
+              textDecoration: "none",
+              color: "black",
+              textAlign: "center",
+            }}
+            to="/Testimonials"
+          >
+            <li>Testimonials</li>
+          </Link>
           <li>Our Team</li>
           <li>Contact</li>
         </ul>
