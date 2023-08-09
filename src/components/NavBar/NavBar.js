@@ -32,7 +32,9 @@ const NavBar = (props) => {
           <Link style={{ textDecoration: 'none', color: 'black' }} to="/Testimonials">
           <li>Testimonials</li>
           </Link>
+          <Link style={{ textDecoration: 'none', color: 'black' }} to="/Team">
           <li>Our Team</li>
+          </Link>
           <li>Contact</li>
         </ul>
       ) : null}

@@ -19,8 +19,7 @@ let testimonials = [
     ImagePath: "/images/Jack.JPG",
   },
   {
-    TestimonialsText:
-      "Highly recommend for this car rental website!",
+    TestimonialsText: "Highly recommend for this car rental website!",
     Name: "Sam Parag",
     Address: "India",
     ImagePath: "/images/Harry.JPG",
@@ -29,19 +28,18 @@ let testimonials = [
 
 const CustomCarousel = () => {
   return (
-    <Box sx={{marginBottom:'2rem'}} >
-      <Carousel >
+    <Box sx={{ marginBottom: "2rem" }}>
+      <Carousel>
         {testimonials.map((item) => (
-          <Box >
-          <TestimonialCard
-            Testimonial={item.TestimonialsText}
-            Name={item.Name}
-            Address={item.Address}
-            ImagePath={item.ImagePath}
-          />
+          <Box key={Math.random()}>
+            <TestimonialCard
+              Testimonial={item.TestimonialsText}
+              Name={item.Name}
+              Address={item.Address}
+              ImagePath={item.ImagePath}
+            />
           </Box>
         ))}
-    
       </Carousel>
     </Box>
   );

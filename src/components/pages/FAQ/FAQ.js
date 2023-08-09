@@ -57,7 +57,11 @@ const FAQ = () => {
           }}
         >
           {accordianData.map((item) => (
-            <AccordianCustom Heading={item.Heading} Details={item.Details} />
+            <AccordianCustom
+              key={Math.random()}
+              Heading={item.Heading}
+              Details={item.Details}
+            />
           ))}
         </Box>
       </Box>

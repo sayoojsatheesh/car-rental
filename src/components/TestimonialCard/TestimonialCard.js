@@ -1,9 +1,8 @@
 // MUI //
-import { Box, useMediaQuery, useTheme } from "@mui/material";
+import { Box,  } from "@mui/material";
 
 const TestimonialCard = (props) => {
-  const theme = useTheme();
-  const mdUP = useMediaQuery(theme.breakpoints.up("sm"));
+
   return (
     <Box
       sx={{
@@ -16,7 +15,6 @@ const TestimonialCard = (props) => {
         flexDirection: "column",
         justifyContent: "space-between",
         minHeight: "200px",
-        width:`${mdUP?'50%':'auto'}`,
         margin:'0 auto'
       }}
     >

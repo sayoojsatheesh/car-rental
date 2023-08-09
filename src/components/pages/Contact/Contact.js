@@ -8,7 +8,7 @@ const Contact = () => {
     <Box sx={{ padding: "2rem 2rem", textAlign: "center" }}>
       <Divider />
       <Grid container>
-        <Grid  xs={12} sm={12} md={12} lg={3} item p={3}>
+        <Grid  xs={12} sm={6} md={6} lg={3} item p={3}>
           <h2 style={{ marginBottom: ".7rem" }}>
             <span style={{ fontWeight: "800" }}>Car</span> Rental
           </h2>
@@ -39,7 +39,7 @@ const Contact = () => {
             <EmailIcon /> <span>karrental@gmail.com</span>
           </Box>
         </Grid>
-        <Grid xs={12} sm={12} md={12} lg={3} p={3}>
+        <Grid xs={12} sm={6} md={6} lg={3} p={3}>
           <h2 style={{ fontWeight: 800, marginBottom: ".7rem" }}>Company</h2>
           <h4 style={{ color: "grey", marginBottom: ".7rem" }}>New York</h4>
           <h4 style={{ color: "grey", marginBottom: ".7rem" }}>Careers</h4>
@@ -47,7 +47,7 @@ const Contact = () => {
           <h4 style={{ color: "grey", marginBottom: ".7rem" }}>Blog</h4>
           <h4 style={{ color: "grey", marginBottom: ".7rem" }}>How we work</h4>
         </Grid>
-        <Grid xs={12} md={12} lg={3} p={3}>
+        <Grid xs={12} sm={6} md={6} lg={3} p={3}>
           <h2 style={{ fontWeight: 800, marginBottom: ".7rem" }}>
             Working Hours
           </h2>
@@ -59,7 +59,7 @@ const Contact = () => {
           </h4>
           <h4 style={{ color: "grey", marginBottom: ".7rem" }}>Sun: Closed</h4>
         </Grid>
-        <Grid xs={12} sm={12} md={12} lg={3} p={3}>
+        <Grid xs={12} sm={6} md={6} lg={3} p={3}>
           <h2 style={{ fontWeight: 800, marginBottom: ".7rem" }}>
             SUBSCRIPTION
           </h2>

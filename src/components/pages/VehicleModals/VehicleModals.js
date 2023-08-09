@@ -14,7 +14,7 @@ const VehicleModals = () => {
       <Box sx={{ padding: "2rem 2rem" }}>
         <Grid container spacing={3}>
           {CarData.map((item) => (
-            <Grid item xs={12} md={6} lg={4}>
+            <Grid item xs={12} md={6} lg={4} key={Math.random()}>
               <VehicleCard
                 model={item.model}
                 doors={item.doors}
