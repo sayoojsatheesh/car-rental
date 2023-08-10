@@ -83,9 +83,6 @@ const ContactPage = () => {
                 label="First Name"
                 variant="outlined"
                 sx={{ width: "100%", marginTop: ".3rem" }}
-                onChange={(event) => {
-                  setfirstName(event.target.value);
-                }}
               />
             </Box>
 
@@ -98,9 +95,6 @@ const ContactPage = () => {
                 label="Last Name"
                 variant="outlined"
                 sx={{ width: "100%", marginTop: ".3rem" }}
-                onChange={(event) => {
-                  setlastName(event.target.value);
-                }}
               />
             </Box>
 
@@ -113,9 +107,6 @@ const ContactPage = () => {
                 maxRows={10} // Maximum number of rows before scrolling
                 placeholder="Write here..."
                 style={{ width: "100%", minHeight: "50px" }}
-                onChange={(event) => {
-                  setemailAddress(event.target.value);
-                }}
               />
             </Box>
             <Box>
