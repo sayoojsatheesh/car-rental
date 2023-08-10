@@ -2,7 +2,6 @@
 import { useState } from "react";
 // React Router //
 import { Routes, Route } from "react-router-dom";
-
 // Custom //
 import NavBar from "./components/NavBar/NavBar";
 import SideBar from "./components/SideBar/SideBar";

@@ -90,10 +90,14 @@ const ReservationDialog = (props) => {
 
   const handleReserveNowButtonClicked = () => {
     if (!firstName || !lastName || !emailAddress) {
-      toast.error("All fields required!");
+      toast.error("All fields required!", {
+        autoClose: 2000, // 2000 milliseconds (2 seconds)
+      });
       return;
     }
-    toast.success("Reservation Done!");
+    toast.success("Reservation Done!", {
+      autoClose: 2000, // 2000 milliseconds (2 seconds)
+    });
     setfirstName("");
     setlastName("");
     setemailAddress("");

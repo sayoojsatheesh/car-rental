@@ -28,3 +28,7 @@ code {
     background-color: #ff4d30;
     border-radius: 5px;
   }
+
+  .Toastify__close-button {
+    display: none; /* Hide the close button */
+  }

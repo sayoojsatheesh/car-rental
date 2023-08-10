@@ -78,7 +78,9 @@ const BookingPage = () => {
       !pickupDate ||
       !dropofDate
     ) {
-      toast.error("All fields required!");
+      toast.warning("All fields required!",{
+        autoClose: 2000, // 2000 milliseconds (2 seconds)
+      });
       return;
     }
     setOpen(true);
