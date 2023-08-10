@@ -22,12 +22,12 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 let imageMap = {
-  ["Audi A1s-Line"]: "/images/Audi.PNG",
-  ["VW Golf 6"]: "/images/VWGolf.PNG",
-  ["Toyota Camry"]: "/images/Toyota.PNG",
-  ["BMW 320 ModernLine"]: "/images/BMW.PNG",
-  ["Mercedes-Benz GLK"]: "/images/Mercedes.PNG",
-  ["VW Passat CC"]: "/images/VWPassat.PNG",
+  ["Audi A1s-Line"]: "/Images/Audi.PNG",
+  ["VW Golf 6"]: "/Images/VWGolf.PNG",
+  ["Toyota Camry"]: "/Images/Toyota.PNG",
+  ["BMW 320 ModernLine"]: "/Images/BMW.PNG",
+  ["Mercedes-Benz GLK"]: "/Images/Mercedes.PNG",
+  ["VW Passat CC"]: "/Images/VWPassat.PNG",
 };
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
