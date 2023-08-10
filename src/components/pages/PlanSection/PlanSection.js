@@ -35,7 +35,7 @@ const PlanSection = () => {
         {InfoArray.map((item) => (
           <Grid key={Math.random()} item lg={4}>
             <PlanSectionCard
-              ImagePath={item.imagePath}
+              ImagePath={"/Images/Planimg3.PNG"}
               Headingtext={item.HeadingText}
               Paragraph={item.Paragraph}
             />
