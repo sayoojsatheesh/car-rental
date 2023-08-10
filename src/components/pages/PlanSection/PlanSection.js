@@ -5,19 +5,19 @@ import PlanSectionCard from "../../PlanSectionCard/PlanSectionCard";
 
 const InfoArray = [
   {
-    imagePath: "/Images/Planimg1.png",
+    imagePath: '/Images/PlanImg1.png',
     HeadingText: "Select Car",
     Paragraph:
       "We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs",
   },
   {
-    imagePath: "/Images/Planimg2.png",
+    imagePath: "/Images/PlanImg2.png",
     HeadingText: "Contact Operator",
     Paragraph:
       "Our knowledgeable and friendly operators are always ready to help with any questions or concerns",
   },
   {
-    imagePath: "/Images/Planimg3.png",
+    imagePath: "/Images/PlanImg3.png",
     HeadingText: "Let's Drive",
     Paragraph:
       "Whether you're hitting the open road, we've got you covered with our wide range of cars",
