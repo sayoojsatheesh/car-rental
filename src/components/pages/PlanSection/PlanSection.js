@@ -5,19 +5,19 @@ import PlanSectionCard from "../../PlanSectionCard/PlanSectionCard";
 
 const InfoArray = [
   {
-    imagePath: "/Images/Planimg1.PNG",
+    imagePath: "/Images/Planimg1.png",
     HeadingText: "Select Car",
     Paragraph:
       "We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs",
   },
   {
-    imagePath: "/Images/Planimg2.PNG",
+    imagePath: "/Images/Planimg2.png",
     HeadingText: "Contact Operator",
     Paragraph:
       "Our knowledgeable and friendly operators are always ready to help with any questions or concerns",
   },
   {
-    imagePath: "/Images/Planimg3.PNG",
+    imagePath: "/Images/Planimg3.png",
     HeadingText: "Let's Drive",
     Paragraph:
       "Whether you're hitting the open road, we've got you covered with our wide range of cars",
@@ -35,7 +35,7 @@ const PlanSection = () => {
         {InfoArray.map((item) => (
           <Grid key={Math.random()} item lg={4}>
             <PlanSectionCard
-              ImagePath={"/Images/Planimg3.PNG"}
+              ImagePath={item.imagePath}
               Headingtext={item.HeadingText}
               Paragraph={item.Paragraph}
             />
