@@ -1,9 +1,9 @@
 let teamData=[{
-    ImagePath:'/images/p1.png',
+    ImagePath:'./images/p1.png',
     Name:'Mike',
     Position:'Sales'
 },{
-    ImagePath:'/images/p2.png',
+    ImagePath:'./images/p2.png',
     Name:'James',
     Position:'UI/UX'
 },{
