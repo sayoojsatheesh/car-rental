@@ -12,19 +12,19 @@ import PlanSectionCard from "../../PlanSectionCard/PlanSectionCard";
 
 const InfoArray = [
   {
-    imagePath: "/images/Choose1.PNG",
+    imagePath: "/Images/Choose1.png",
     HeadingText: "Cross Country Drive",
     Paragraph:
       "Take your driving experience to the next level with our top-notch vehicles for your cross-country adventures.",
   },
   {
-    imagePath: "/images/Choose2.PNG",
+    imagePath: "/Images/Choose2.png",
     HeadingText: "All Inclusive Pricing",
     Paragraph:
       "Get everything you need in one convenient, transparent price with our all-inclusive pricing policy.",
   },
   {
-    imagePath: "/images/Choose3.PNG",
+    imagePath: "/Images/Choose3.png",
     HeadingText: "No Hidden Charges",
     Paragraph:
       "Enjoy peace of mind with our no hidden charges policy. We believe in transparent and honest pricing.",
