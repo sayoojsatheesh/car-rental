@@ -40,7 +40,7 @@ const FAQ = () => {
       </p>
       <Box
         sx={{
-          backgroundImage: `url('/images/AccordianBackground.PNG')`,
+          backgroundImage: `url('/Images/AccordianBackground.PNG')`,
           width: "100%",
           objectFit: "contain",
           backgroundPosition: "0 70%",
