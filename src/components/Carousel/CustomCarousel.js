@@ -9,20 +9,20 @@ let testimonials = [
       "We rented a car from this website and had an amazing experience! The booking was easy and the rental rates were very affordable.",
     Name: "Jarry Carter",
     Address: "Belgard",
-    ImagePath: "/images/Harry.JPG",
+    ImagePath: "/Images/Harry.jpg",
   },
   {
     TestimonialsText:
       "The car was in great condition and made our trip even better. Highly recommend for this car rental website!",
     Name: "Ron Rizzly",
     Address: "Novi Sad",
-    ImagePath: "/images/Jack.JPG",
+    ImagePath: "/Images/Jack.jpg",
   },
   {
     TestimonialsText: "Highly recommend for this car rental website!",
     Name: "Sam Parag",
     Address: "India",
-    ImagePath: "/images/Harry.JPG",
+    ImagePath: "/Images/Harry.jpg",
   },
 ];
 
