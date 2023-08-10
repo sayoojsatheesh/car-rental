@@ -21,7 +21,7 @@ const CarModels = () => {
     ac: "Yes",
     transmission: "Manual",
     fuel: "Gasoline",
-    imagePath: "/images/Audi.PNG",
+    imagePath: "/Images/Audi.PNG",
   });
 
   function handleModelChange(currentId) {
