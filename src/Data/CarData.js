@@ -10,7 +10,7 @@ let CarData = [
     ac: "Yes",
     transmission: "Manual",
     fuel: "Gasoline",
-    imagePath:'/images/Audi.PNG'
+    imagePath:'/Images/Audi.PNG'
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ let CarData = [
     ac: "Yes",
     transmission: "Manual",
     fuel: "Diesel",
-    imagePath:'/images/VWGolf.PNG'
+    imagePath:'/Images/VWGolf.PNG'
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ let CarData = [
     ac: "Yes",
     transmission: "Automatic",
     fuel: "Hybird",
-    imagePath:'/images/Toyota.PNG'
+    imagePath:'/Images/Toyota.PNG'
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ let CarData = [
     ac: "Yes",
     transmission: "Manual",
     fuel: "Diesel",
-    imagePath:'/images/BMW.PNG'
+    imagePath:'/Images/BMW.PNG'
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ let CarData = [
     ac: "Yes",
     transmission: "Manual",
     fuel: "Diesel",
-    imagePath:'/images/Mercedes.PNG'
+    imagePath:'/Images/Mercedes.PNG'
   },
   {
     id: 6,
@@ -75,7 +75,7 @@ let CarData = [
     ac: "Yes",
     transmission: "Automatic",
     fuel: "Gasoline",
-    imagePath:'/images/VWPassat.PNG'
+    imagePath:'/Images/VWPassat.PNG'
   },
 ];
 
