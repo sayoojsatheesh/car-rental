@@ -93,7 +93,7 @@ const ReservationDialog = (props) => {
 
   const handleReserveNowButtonClicked = () => {
     if (!firstName || !lastName || !emailAddress) {
-      toast.error("All fields required!", {
+      toast.warning("All fields required!", {
         autoClose: 2000, // 2000 milliseconds (2 seconds)
       });
       return;
