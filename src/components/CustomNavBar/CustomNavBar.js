@@ -8,6 +8,8 @@ const CustomNavBar = () => {
   let map = {
     "/models": "Vehicle Modals",
     "/Testimonials": "Testimonials",
+    "/Team":'Our Team',
+    "/Contact":'/Contact Us'
   };
   let pathName = map[currentPath];
   return (
