@@ -12,6 +12,8 @@ import {
   TextField,
   Grid,
   Box,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import IconButton from "@mui/material/IconButton";
@@ -41,7 +43,8 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
 
 function BootstrapDialogTitle(props) {
   const { children, onClose, ...other } = props;
-
+  const theme = useTheme();
+  const xsScreen = useMediaQuery(theme.breakpoints.only("xs"));
   return (
     <DialogTitle
       sx={{
@@ -51,7 +54,7 @@ function BootstrapDialogTitle(props) {
         backgroundColor: "#ff4d30",
         color: "white",
         fontWeight: 600,
-        fontSize: "1.5rem",
+        fontSize: xsScreen ? "1rem" : "1.5rem",
         background: "red",
       }}
       {...other}

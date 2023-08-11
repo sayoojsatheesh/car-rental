@@ -14,10 +14,11 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 const AccordianCustom = (props) => {
   const theme = useTheme();
   const MdScreenAbove = useMediaQuery(theme.breakpoints.up("md"));
-  const [expanded, setexpanded] = useState(false);
+  const [expanded, setexpanded] = useState(props.expanded);
 
   return (
     <Accordion
+      expanded={expanded}
       onChange={(e, expanded) => {
         if (expanded) {
           setexpanded(true);
@@ -25,7 +26,7 @@ const AccordianCustom = (props) => {
           setexpanded(false);
         }
       }}
-      sx={{width:MdScreenAbove?'60%':'auto'}}
+      sx={{ width: MdScreenAbove ? "60%" : "auto" }}
     >
       <AccordionSummary
         expandIcon={<ExpandMoreIcon />}
@@ -36,9 +37,7 @@ const AccordianCustom = (props) => {
         <h3>{props.Heading}</h3>
       </AccordionSummary>
       <AccordionDetails>
-        <Typography sx={{ color: "grey" }}>
-         {props.Details}
-        </Typography>
+        <Typography sx={{ color: "grey" }}>{props.Details}</Typography>
       </AccordionDetails>
     </Accordion>
   );

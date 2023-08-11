@@ -56,8 +56,9 @@ const FAQ = () => {
             alignItems: "center",
           }}
         >
-          {accordianData.map((item) => (
+          {accordianData.map((item, i) => (
             <AccordianCustom
+              expanded={i == 0 ? true : false}
               key={Math.random()}
               Heading={item.Heading}
               Details={item.Details}
