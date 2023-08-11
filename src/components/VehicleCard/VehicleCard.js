@@ -28,7 +28,10 @@ const VehicleCard = (props) => {
           width: "95%",
           borderRadius:'5px',
           border:'.5px solid grey',
-          minHeight:'470px'
+          minHeight:'490px',
+          display:'flex',
+          flexDirection:'column',
+          justifyContent:'space-between'
            
         }}
       >
