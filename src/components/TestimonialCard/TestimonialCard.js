@@ -14,7 +14,7 @@ const TestimonialCard = (props) => {
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        minHeight: "200px",
+        minHeight: "250px",
         margin:'0 auto'
       }}
     >

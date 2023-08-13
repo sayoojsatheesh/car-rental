@@ -31,7 +31,7 @@ const CustomCarousel = () => {
     <Box sx={{ marginBottom: "2rem" }}>
       <Carousel>
         {testimonials.map((item) => (
-          <Box key={Math.random()}>
+          <Box  key={Math.random()}>
             <TestimonialCard
               Testimonial={item.TestimonialsText}
               Name={item.Name}
