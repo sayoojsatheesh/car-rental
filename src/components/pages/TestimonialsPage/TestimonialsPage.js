@@ -31,7 +31,7 @@ const TestimonialsPage = () => {
           with you.
         </p>
       </Box>
-      <Box sx={{width:`${mdUP?'50%':'auto'}`,margin:'0 auto'}}>
+      <Box sx={{width:`${mdUP?'50%':'95%'}`,margin:'0 auto'}}>
         <CustomCarousel />
       </Box>
       <Contact />
