@@ -1,7 +1,7 @@
 // React //
 import { useState } from "react";
 // React Router //
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route,Navigate } from "react-router-dom";
 // Custom //
 import NavBar from "./components/NavBar/NavBar";
 import SideBar from "./components/SideBar/SideBar";
@@ -24,6 +24,8 @@ function App() {
         <Route path="/Testimonials" element={<TestimonialsPage />} />
         <Route path="/Team" element={<TeamPage />} />
         <Route path="/Contact" element={<ContactPage />} />
+        {/* Catch-all route to redirect to the default route */}
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       
     </div>
